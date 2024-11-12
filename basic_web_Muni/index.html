@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script>
+      console.log("error dari iframe cors youtube");
+      // fungsi simple ganti theme tanpa local storage
+      // jadi ga akan kesimpen theme nya walaupun di refresh
+      function gantiTema() {
+        console.log("berhasil");
+        const getBodyElement = document.querySelector("body");
+        if (getBodyElement.className === "light") {
+          getBodyElement.classList.add("black");
+          getBodyElement.classList.remove("light");
+        } else {
+          getBodyElement.classList.remove("black");
+          getBodyElement.classList.add("light");
+        }
+      }
+    </script>
+  </head>
+  <body class="black">
+    <div class="wrapper">
+      <!-- tema dan navigation -->
+      <header class="header">
+        <h2 class="intro" style="margin-bottom: 0;">Introduction to</h2>
+        <h1>HATSUNE MIKU</h1>
+        <nav class="navigation">
+          <a class="nav-link">Test</a>
+          <a class="nav-link">Test</a>
+          <a class="nav-link">Test</a>
+          <button class="change-theme" onclick="gantiTema()">
+            Change Theme
+          </button>
+        </nav>
+      </header>
+    </div>
+    <main class="main">
+      <div class="wrapper">
+        <!-- content-utama -->
+        <div class="content">
+          <!-- artiker pertama -->
+          <article>
+            <aside class="aside">
+              <h2>HATSUNE MIKU</h2>
+              <p>
+                <span class="miku-light">Hatsune Miku</span> (Japanese:
+                <span class="miku-light">初音ミク</span>, [hatsɯne miꜜkɯ]),
+                sometimes called <span class="miku-light">Miku Hatsune</span>,
+                officially code-named CV01,is a Vocaloid software voicebank
+                developed by
+                <span
+                  ><a href="#" class="link-example"
+                    >Crypton Future Media</a
+                  ></span
+                >
+                and its official mascot character, a 16-year-old girl with long,
+                turquoise twintails.
+              </p>
+            </aside>
+            <p style="padding: 0 12px">
+              <span class="miku-light">Miku</span> uses
+              <span><a href="#" class="link-example">Yamaha</a></span>
+              Corporation's Vocaloid 2, Vocaloid 3, and Vocaloid 4 singing
+              synthesizing technologies, and Crypton Future Media's
+              <span><a href="#" class="link-example">Piapro Studio</a></span
+              >, a standalone singing synthesizer editor. She was the second
+              Vocaloid sold using the Vocaloid 2 engine and the first Japanese
+              Vocaloid to use the Japanese version of the 2 engine. The voice is
+              modeled from Japanese voice actress
+              <span><a href="#" class="link-example">Saki Fujita</a></span>
+            </p>
+            <p style="padding: 0 12px">
+              The name of the character comes from merging the Japanese words
+              for first (<span class="miku-light">初</span>,
+              <span class="miku-light">hatsu</span>), sound (<span
+                class="miku-light"
+                >音</span
+              >, <span class="miku-light">ne</span>), and future (<span
+                class="miku-light"
+                >ミク</span
+              >, <span class="miku-light">miku</span> ), thus meaning "the first
+              sound of the future",which, along with her code name, refers to
+              her position as the first of Crypton's "Character Vocal Series"
+              (abbreviated "CV Series")
+            </p>
+          </article>
+          <!-- artikel kedua -->
+          <article class="article-2" dir="rtl">
+            <aside class="aside-left">
+              <img
+                src="../basic_web_Muni/assets/Miku.png"
+                alt="gambar-miku"
+                class="aside-img"
+                srcset=""
+              />
+            </aside>
+            <p style="padding: 0 12px">
+              Crypton released <span class="miku-light">Hatsune Miku</span> on
+              August 31, 2007. Crypton had the idea to release Miku as "an
+              android diva in the near-future world where songs are lost.".She
+              was the first Vocaloid to be developed by the company, following
+              their commercial release handle of Yamaha Corporation developed
+              vocals <span style="color: #de4444">Meiko</span> and
+              <span style="color: #3367cd">Kaito</span>, making
+              <span class="miku-light">Hatsune Miku</span> the third Vocaloid to
+              be sold. commercially by the company
+            </p>
+            <p style="padding: 0 12px">
+              Miku has been heavily promoted since 2008 and was originally aimed
+              at professional musicians.On September 12, 2007,
+              <span><a href="#" class="link-example">Amazon.co.jp </a></span
+              >reported sales of
+              <span class="miku-light">Hatsune Miku</span> totaling 57,500,000
+              yen, making the character the number-one-selling software of that
+              time.She was the first vocal to be developed and distributed by
+              Crypton Future Media and sung in Japanese.
+              <span class="miku-light">Hatsune Miku's</span> instant success is
+              owed to Vocaloid being a cultural hit in Japan and she reportedly
+              sold 40,000 units by July 2008, selling on average 300 units a
+              week
+            </p>
+          </article>
+          <!-- Quotes -->
+          <div class="miku-quotes">
+            <!-- top quotes -->
+            <div class="quotes top-quotes">"</div>
+            <p>
+              A VIRTUAL SINGER with characteristic turquoise hair in long pig
+              tails. Her cute, lively, cheerful voice lends itself to a variety
+              of genres. She's the most popular of the VIRTUAL SINGER, with fans
+              of all ages across the world.
+              <span class="quotes-content"
+                >- <cite>From Project SEKAI Colorful Stages!</cite></span
+              >
+            </p>
+            <!-- bottom-quotes -->
+            <div class="quotes bottom-quotes">"</div>
+          </div>
+          <!-- list video dengan flexbox -->
+          <section style="padding: 16px 0">
+            <h1 style="text-align: center; margin-bottom: 5px">List Songs</h1>
+            <p style="text-align: center">Iconic Song (Opinion Sendiri)</p>
+            <div class="video-list">
+              <div class="video-container">
+                <iframe
+                  class="iframe-youtube"
+                  src="https://www.youtube.com/embed/AS4q9yaWJkI?si=6Uee4QRABJVH6FMt"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="video-container">
+                <iframe
+                  class="iframe-youtube"
+                  src="https://www.youtube.com/embed/vnw8zURAxkU?si=ZnKz2vbUx6DBMz7S"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="video-container">
+                <iframe
+                  class="iframe-youtube"
+                  src="https://www.youtube.com/embed/P_CSdxSGfaA?si=q9IBk3Jgkbcicnnt"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="video-container">
+                <iframe
+                  class="iframe-youtube"
+                  src="https://www.youtube.com/embed/oEexpf-arg4?si=f8wRv_7mGxA0A1d1"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <p>
+          Note: Artikel berbahasa english karna wikipedia untuk Hatsune Miku
+          lebih komplit dalam section english nya
+        </p>
+        <div class="sub-footer">
+          <div class="footer-content">
+            <h4>Source</h4>
+            <a href="https://en.wikipedia.org/wiki/Hatsune_Miku" class="footer-link">
+              <span><i class="fa fa-wikipedia-w" aria-hidden="true"></i> </span
+              >Wikipedia
+            </a>
+            <a href="https://projectsekai.fandom.com/wiki/Hatsune_Miku" class="footer-link">
+              <span><i class="fa fa-users" aria-hidden="true"></i> </span>Fandom
+            </a>
+            <a href="https://www.crypton.co.jp/miku_eng" class="footer-link">
+              <span
+                ><i
+                  class="fa fa-creative-commons"
+                  aria-hidden="true"
+                ></i> </span
+              >Crypton
+            </a>
+          </div>
+          <div class="footer-content">
+            <h4>About Me</h4>
+            <a href="https://www.linkedin.com/in/ramzi-akbar-ramadhan-b8b05a243/" class="footer-link">
+              <span
+                ><i class="fa fa-linkedin-square" aria-hidden="true"></i> </span
+              >LinkedIn
+            </a>
+            <a href="https://github.com/MuniMunii" class="footer-link">
+              <span><i class="fa fa-github" aria-hidden="true"></i> </span
+              >Github
+            </a>
+            <a href="https://munimunii.github.io/MuniPorto" class="footer-link">
+              <span><i class="fa fa-globe" aria-hidden="true"></i> </span
+              >MyWebsite
+            </a>
+          </div>
+          <div class="footer-content" style="gap: 4px;">
+            <h4>Tools yang di pakai</h4>
+            <p style="margin: 0;">HTML & CSS</p>
+            <p style="margin: 0;">Javascript (Untuk Ganti theme)</p>
+            <p style="margin: 0;">VsCode</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

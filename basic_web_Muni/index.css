@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+html, body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.miku-light{
+    color: #33CCBA;
+}
+body.black .intro{
+    font-family: "Kanit", serif;
+    font-size: larger;
+    color: white;
+}
+body.light .intro{
+    font-family: "Kanit", serif;
+    font-size: larger;
+    color: black;
+}
+body.light{
+    background-color: rgb(255, 244, 244);
+    color: black;
+}
+body.black{
+    color: white;
+    background-color: black;
+}
+.header{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: black;
+}
+.link-example{
+    text-decoration: none;
+    color: #E56399;
+}
+.link-example:hover{
+    text-decoration: underline;
+}
+.header h1{
+    margin-top: 10px;
+    text-shadow:4px -2px 2px rgba(51,204,186,0.4);
+    font-size: 56px;
+    letter-spacing: 8px;
+    color:#33CCBA;
+    font-family: "Kanit", serif;
+}
+.navigation{
+    flex-wrap: wrap;
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-link{
+    font-family: "Kanit", serif;
+    border-radius: 3px;
+    width: 75px;
+    padding: 4px 10px;
+    
+    cursor: pointer;
+    text-align: center;
+}
+body.black .nav-link{
+    background-color: #33CCBA;
+}
+body.light .nav-link{
+    background-color: #E56399;
+}
+.wrapper{
+    position: relative;
+    overflow: auto;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+}
+.main{
+    position: relative;
+    margin: 20px 0;
+    font-family: "Kanit", serif;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.aside-img{
+    width: 275px;
+    height: 275px;
+}
+.article-2{
+    margin-top: 8px;
+    text-align: left;
+}
+.aside-left{
+    margin-right: 2px;
+    float: left;
+    width: fit-content;
+    padding: 8px;
+}
+.aside{
+    margin-left: 2px;
+    float: right;
+    width: 50%;
+    padding: 8px;
+}
+.aside h2{
+    color: #33CCBA;
+}
+body.black .aside{
+    background-color: rgba(51, 204, 186,0.4);
+    border-left: solid  #33CCBA 1px;
+}
+body.light .aside{
+    background-color: rgba(126, 189, 195, 0.4);
+    border-left: solid  #42BFDD 1px;
+}
+.miku-quotes{
+    position: relative;
+    border-radius: 25px;
+    background-color: rgba(51, 204, 186,0.4);
+    padding: 30px 36px;
+    margin: 12px auto;
+    width: 40%;
+}
+.quotes{
+    user-select: none;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    position: absolute;
+    font-size: 150px;
+    padding: 0 10px;
+    color: grey;
+}
+.top-quotes{
+    top: -64px;
+    left:-28px ;
+}
+.bottom-quotes{
+    bottom: -124px;
+    right:-28px ;
+}
+.quotes-content{
+    font-size: smaller;
+    user-select: none;
+    color: #000000b2;
+}
+.video-list{
+    margin: 0 10px;
+    gap: 10px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+}
+.video-container{
+    position: relative;
+    overflow: hidden;
+    width: 450px;
+    height: 250px;
+}
+.iframe-youtube{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+body.light .video-container{
+    box-shadow: 10px 8px 21px -3px rgba(0,0,0,0.61);
+
+}
+body.black .video-container{
+    box-shadow: 8px 8px 21px -6px rgba(255,255,255,0.61);
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    padding: 12px 8px;
+    width: 100%;
+}
+body.light .footer{
+    background-color: #33CCBA;
+}
+body.black .footer{
+    color: rgb(238, 223, 223);
+    background-color: #E56399;
+}
+.sub-footer{
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    flex-direction: row;
+    gap: 50px;
+}
+.footer-content h4{
+    font-weight: 800;
+}
+.footer-link{
+    text-decoration: none;
+}
+body.black .footer-link{
+    color: white;
+}
+body.light .footer-link{
+    color: black;
+}
+.footer-link:hover{
+text-decoration: underline;}
+.footer-content{
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+i{
+    padding-right: 2px;
+    color: black;
+}
+@media only screen and (max-width: 400px){
+    .nav-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0;
+        width: 100%;
+        height: 50px;
+    }
+}
